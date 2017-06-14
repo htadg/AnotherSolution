@@ -3,7 +3,7 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.get_name, name='get_name'),
-    # url(r'^$', views.index, name="index"),
     url(r'^name/', views.get_name, name='get_name'),
+    url(r'^get_verdict/', views.get_verdict, name='get_verdict'),
     url(r'^plot/', views.matplot, name='matplot')
 ]
